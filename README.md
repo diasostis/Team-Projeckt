@@ -1,4 +1,4 @@
-# Team-Projeckt
+# Team-Project
 
 Developers: Γεώργιος Κούλης, Ευάγγελος Μεσολογγίτης,
 
