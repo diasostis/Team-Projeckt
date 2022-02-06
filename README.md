@@ -1,6 +1,6 @@
 # Team-Projeckt
 
-Developers: Γεώργιος Κούλης
+Developers: Γεώργιος Κούλης, Ευάγγελος Μεσολογγίτης,
 
 TimeFrame:
 
