@@ -1,2 +1,14 @@
 # Team-Projeckt
-eap plipro team-projeckt
+
+Developers:
+
+TimeFrame:
+
+Project:
+
+To-Do-List:
+
+Coding Ideas:
+
+Grafical Interface ideas:
+
