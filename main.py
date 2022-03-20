@@ -11,12 +11,12 @@ from sklearn.metrics import accuracy_score
 
 
 #read excel file as Pandas DataFrame
-df = pd.read_excel("D:/EAP/PLHPRO/TitanicProject/train.xlsx")
+df = pd.read_excel("Project38Titanic.xlsx")
 print(type(df))
 print(df)
 
 #open excel workbook
-wb = openpyxl.load_workbook("D:/EAP/PLHPRO/TitanicProject/train.xlsx")
+wb = openpyxl.load_workbook("Project38Titanic.xlsx")
 print(type(wb))
 print(wb)
 
