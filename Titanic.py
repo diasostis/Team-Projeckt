@@ -101,28 +101,25 @@ def clicksum():
     sns.countplot(x="Survived", data=TitanicData, palette="winter")
     plt.show()
 
-
+# num of survivors gender wise plot
 def clickgender():
     plt. figure()
-    # num of survivors gender wise plot
     sns.countplot(x="Survived", hue="Sex", data=TitanicData, palette="winter")
     plt.show()
  
-
+# class of survivors plot
 def clickclass():
     plt. figure()
-    # class of survivors plot
     sns.countplot(x="Survived", hue="Class", data=TitanicData, palette="winter")
     plt.show()
 
-
+# age of survivors plot
 def clickage():
     plt. figure()
-    # age of survivors plot
     sns.countplot(x="Survived", hue="Age", data=TitanicData, palette="winter")
     plt.show()
     
-
+# close window
 def closewdw():
     wdw.destroy()
 
@@ -147,6 +144,7 @@ TitanicData = TitanicData.reset_index(drop=True)
 # Initiate window
 wdw = Tk()
 
+#Background photo & Icon bitmap
 bg=PhotoImage(file="Titanic-computergraphic2011.png")
 wdw.iconbitmap("321886.ico")
 
