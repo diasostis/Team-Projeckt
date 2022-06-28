@@ -28,7 +28,7 @@ sns.set()
 sns.countplot(x="Survived", data=TitanicData, palette="winter")
 plt.show()
 
-# num of Male / Female
+# num of Male / Femalepip
 print(TitanicData["Sex"].value_counts())
 print("\n")
 
