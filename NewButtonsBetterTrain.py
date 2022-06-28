@@ -53,7 +53,7 @@ def createreport():
                         inplace=True)
 
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=12, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
@@ -80,7 +80,7 @@ def creatematrix():
     Y = TitanicData["Survived"]
 
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=12, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
@@ -106,7 +106,7 @@ def createscore():
     Y = TitanicData["Survived"]
 
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2,random_state=12, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
@@ -132,7 +132,7 @@ def traintestsplit():
     Y = TitanicData["Survived"]
 
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=12, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
