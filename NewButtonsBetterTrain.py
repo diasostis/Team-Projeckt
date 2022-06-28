@@ -70,17 +70,17 @@ def createreport():
 
 
 def creatematrix():
-    X = TitanicData[["Class", "Age", "Sex"]]
-    Y = TitanicData["Survived"]
-
     # convert categorical cols to numeric
     TitanicData.replace({"Survived": {"Yes": 1, "No": 0}, "Sex": {"Male": 0, "Female": 1},
                          "Class": {"First": 1, "Second": 2, "Third": 3, "Crew": 4},
                          "Age": {"Adult": 0, "Child": 1}},
                         inplace=True)
 
+    X = TitanicData[["Class", "Age", "Sex"]]
+    Y = TitanicData["Survived"]
+
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
@@ -96,17 +96,17 @@ def creatematrix():
 
 
 def createscore():
-    X = TitanicData[["Class", "Age", "Sex"]]
-    Y = TitanicData["Survived"]
-
     # convert categorical cols to numeric
     TitanicData.replace({"Survived": {"Yes": 1, "No": 0}, "Sex": {"Male": 0, "Female": 1},
                          "Class": {"First": 1, "Second": 2, "Third": 3, "Crew": 4},
                          "Age": {"Adult": 0, "Child": 1}},
                         inplace=True)
 
+    X = TitanicData[["Class", "Age", "Sex"]]
+    Y = TitanicData["Survived"]
+
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
@@ -122,17 +122,17 @@ def createscore():
 
 
 def traintestsplit():
-    X = TitanicData[["Class", "Age", "Sex"]]
-    Y = TitanicData["Survived"]
-
-    # convert categorical cols to numeric
+    #convert categorical cols to numeric
     TitanicData.replace({"Survived": {"Yes": 1, "No": 0}, "Sex": {"Male": 0, "Female": 1},
                          "Class": {"First": 1, "Second": 2, "Third": 3, "Crew": 4},
                          "Age": {"Adult": 0, "Child": 1}},
                         inplace=True)
 
+    X = TitanicData[["Class", "Age", "Sex"]]
+    Y = TitanicData["Survived"]
+
     # split data to training and test
-    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
+    X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, stratify=Y)
 
     # Logistic Regression
     model = LogisticRegression()
